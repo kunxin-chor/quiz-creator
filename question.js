@@ -1,19 +1,9 @@
-class Question {
-    constructor(text, answer, score) {
-        this.text = text;
-        this.answer = answer;
-        this.score = score;
-    }
-    checkAnswer(answerObject) {
-        return answerObject.answer === this.answer;
-    }
-    render() {
-        displayText(this.text);
-        displayTextbox('Answer', '');
-    }
-}
+/**
+ * @abstract AbstractQuestion
+ * @description Abstract interface for all question types.
+ * @constructor text, answer, score
+ * @method render() - Render the question in the DOM
+ * @method checkAnswer(answerObject) - Check if a user's answer is correct
+ */
 
-const questions = [
-    new Question('What is 2 + 2?', '4', 1),
-    new Question('What is the capital of France?', 'Paris', 1)
-]
+

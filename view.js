@@ -36,7 +36,7 @@ function displayCheckBox(label, value, name) {
     output.appendChild(wrapper);
 }
 
-function displayTextbox(label, value) {
+function displayTextbox(label, value, name = null) {
     const output = document.getElementById('output');
     const wrapper = document.createElement('div');
     const lbl = document.createElement('label');
@@ -44,6 +44,7 @@ function displayTextbox(label, value) {
     const input = document.createElement('input');
     input.type = 'text';
     input.value = value || '';
+    if (name) input.name = name;
     wrapper.appendChild(lbl);
     wrapper.appendChild(input);
     output.appendChild(wrapper);
