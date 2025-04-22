@@ -7,10 +7,12 @@
  */
 class AbstractQuestion {
     constructor(question, answer, score) {
-       
+        this.question = question;
+        this.answer = answer;
+        this.score = score;
     }
     render() {
-       
+
     }
     checkAnswer(answerObject) {
         return false;
