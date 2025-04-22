@@ -8,11 +8,15 @@
 
 class AbstractQuestion {
     constructor(question, answer, score) {
-
+        this.question = question;
+        this.answer = answer;
+        this.score = score;
     }
     render() {
-
+        displayText(this.question);
+        displayTextbox('Answer', '');
     }
+
     checkAnswer(answerObject) {
         return false;
     }
@@ -30,3 +34,8 @@ class ShortAnswerQuestion extends AbstractQuestion {
         return answerObject.answer === this.answer;
     }
 }
+
+const questions = [
+    new ShortAnswerQuestion('What is 2+2?', '4', 1),
+    new ShortAnswerQuestion('What is the capital of New Zealand?', 'Wellington', 1)
+]
