@@ -2,56 +2,6 @@
 // Assumes Question class and view.js are loaded in global scope
 
 // Sample questions (can be replaced)
-const questions = [
-    new Question('What is 2 + 2?', '4', 1),
-    new Question('What is the capital of France?', 'Paris', 1),
-    new MCQQuestion(
-        'Which planet is known as the Red Planet?',
-        [
-            { label: 'Earth', value: 'Earth' },
-            { label: 'Mars', value: 'Mars' },
-            { label: 'Jupiter', value: 'Jupiter' }
-        ],
-        'Mars',
-        1
-    ),
-    new MCQQuestion(
-        'Which is the largest ocean on Earth?',
-        [
-            { label: 'Atlantic Ocean', value: 'Atlantic' },
-            { label: 'Indian Ocean', value: 'Indian' },
-            { label: 'Pacific Ocean', value: 'Pacific' }
-        ],
-        'Pacific',
-        1
-    ),
-    new MultiSelectQuestion(
-        'Select all even numbers below 10:',
-        [
-            { label: '1', value: '1' },
-            { label: '2', value: '2' },
-            { label: '3', value: '3' },
-            { label: '4', value: '4' },
-            { label: '5', value: '5' },
-            { label: '6', value: '6' },
-            { label: '7', value: '7' },
-            { label: '8', value: '8' }
-        ],
-        ['2','4','6','8'],
-        2
-    ),
-    new MultiSelectQuestion(
-        'Which of the following are fruits?',
-        [
-            { label: 'Apple', value: 'Apple' },
-            { label: 'Carrot', value: 'Carrot' },
-            { label: 'Banana', value: 'Banana' },
-            { label: 'Potato', value: 'Potato' }
-        ],
-        ['Apple','Banana'],
-        2
-    )
-];
 
 let currentQuestionIndex = 0;
 let score = 0;
