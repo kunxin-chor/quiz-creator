@@ -1,0 +1,65 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f6f8fa;
+    margin: 0;
+    padding: 0;
+}
+
+#output {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    max-width: 600px;
+    margin: 40px auto 20px auto;
+    padding: 32px 24px 24px 24px;
+    font-size: 1.2em;
+}
+
+#output div {
+    margin-bottom: 18px;
+}
+
+label {
+    margin-left: 8px;
+    font-size: 1em;
+}
+
+input[type="text"] {
+    padding: 6px 10px;
+    border: 1px solid #b3b3b3;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-top: 6px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    accent-color: #0078d4;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+button#submitBtn {
+    display: block;
+    background: #0078d4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 32px;
+    font-size: 1.1em;
+    margin: 0 auto 20px auto;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button#submitBtn:hover {
+    background: #005fa3;
+}
+
+#result {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 16px;
+    min-height: 24px;
+}
